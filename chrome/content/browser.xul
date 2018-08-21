@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://palemon_barebones_tab_groups/skin/skin.css"
+	type="text/css"?>
+<!DOCTYPE overlay
+	SYSTEM "chrome://palemon_barebones_tab_groups/locale/browser.dtd">
+<overlay id="sample" 
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script src="main.js" />
+
+	<menupopup id="menu_ToolsPopup">
+		<menuitem label="&open_barebones_tab_groups.label;"
+			key="palemon_barebones_tab_groups-run-key"
+			oncommand="run_menu_button()"/>
+	</menupopup>
+
+	<!-- Keyboard shortcut... -->
+	<!--
+	<keyset>
+		<key id="palemon_barebones_tab_groups-run-key"
+			modifiers="alt shift" key="L"
+			oncommand="run_keyboard_shortcut()"/>
+	</keyset>
+	-->
+
+	<!--
+	<statusbar id="status-bar">
+		<statusbarpanel id="palemon_barebones_tab_groups-status-bar-icon"
+			class="statusbarpanel-iconic"
+			src="chrome://palemon_barebones_tab_groups/skin/status-bar.png"
+			tooltiptext="&open_barebones_tab_groups.label;"
+			onclick="run_status_bar()"/>
+	</statusbar>
+	-->
+
+	<!--
+	<statusbar id="status-bar">
+		<statusbarpanel id="palemon_barebones_tab_groups-status-bar-icon"
+			class="statusbarpanel-iconic"
+			tooltiptext="&open_barebones_tab_groups.label;"
+			onclick="run_status_bar()"/>
+	</statusbar>
+	-->
+
+	<toolbarpalette id="BrowserToolbarPalette">
+		<toolbarbutton id="palemon_barebones_tab_groups-toolbar-button"
+			label="Pale Moon Barebones Tab Groups"
+			class="toolbarbutton-1 chromeclass-toolbar-additional"
+			tooltiptext="&open_barebones_tab_groups.label;"
+			oncommand="run_toolbar_button()"/>
+	</toolbarpalette>
+</overlay>
+

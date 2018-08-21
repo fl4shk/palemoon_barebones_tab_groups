@@ -2,3 +2,6 @@
 *.txt.ignore
 */tags
 */types_*.taghl
+*.xpi
+*.zip
+palemoon_barebones_tab_groups@fl4shk.net

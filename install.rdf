@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>palemon_barebones_tab_groups@fl4shk.net</em:id>
+    <em:name>Pale Moon Barebones Tab Groups</em:name>
+    <em:description>Barebones replacement for ye olde Tab Groups plugin</em:description>
+    <em:creator>Andrew Clark</em:creator>
+    <em:version>1.0.00</em:version>
+    <em:type>2</em:type>
+    <em:homepageURL>https://github.com/fl4shk/palemoon_barebones_tab_groups</em:homepageURL>
+    <em:optionsURL>chrome://palemon_barebones_tab_groups/content/options.xul</em:optionsURL>
+
+    <!-- Pale Moon -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id>
+        <em:minVersion>28.0</em:minVersion>
+        <em:maxVersion>28.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>

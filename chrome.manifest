@@ -1,0 +1,7 @@
+content     palemon_barebones_tab_groups    chrome/content/
+overlay     chrome://browser/content/browser.xul    chrome://palemon_barebones_tab_groups/content/browser.xul
+
+locale      palemon_barebones_tab_groups    en-US           locale/en-US/
+
+skin        palemon_barebones_tab_groups    classic/1.0     skin/
+style       chrome://global/content/customizeToolbar.xul  chrome://palemon_barebones_tab_groups/skin/skin.css

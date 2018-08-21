@@ -1,0 +1,9 @@
+#palemon_barebones_tab_groups-toolbar-button
+{
+	list-style-image: 
+		url("chrome://palemon_barebones_tab_groups/skin/toolbar-small.png");
+	/*
+	list-style-image: 
+		url("chrome://palemon_barebones_tab_groups/skin/status-bar.png");
+	*/
+}
