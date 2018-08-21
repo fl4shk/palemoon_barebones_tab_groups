@@ -58,18 +58,24 @@ function run_menu_button()
 	alert("run_menu_button():  Hello World!");
 }
 
-function run_status_bar()
-{
-	alert("run_status_bar():  Hello World!");
-}
+//function run_status_bar()
+//{
+//	alert("run_status_bar():  Hello World!");
+//}
 
 function run_toolbar_button()
 {
-	alert("run_toolbar_button():  Hello World!");
+	//alert("run_toolbar_button():  Hello World!");
+	let menu = document.getElementById("binop_menu");
+
+	for (let key in menu)
+	{
+		console.log(key);
+	}
 }
 
-function run_keyboard_shortcut()
-{
-	alert("run_keyboard_shortcut():  Hello World!");
-}
+//function run_keyboard_shortcut()
+//{
+//	alert("run_keyboard_shortcut():  Hello World!");
+//}
 

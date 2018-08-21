@@ -41,12 +41,35 @@
 	</statusbar>
 	-->
 
+	<!--
 	<toolbarpalette id="BrowserToolbarPalette">
 		<toolbarbutton id="palemon_barebones_tab_groups-toolbar-button"
 			label="Pale Moon Barebones Tab Groups"
 			class="toolbarbutton-1 chromeclass-toolbar-additional"
 			tooltiptext="&open_barebones_tab_groups.label;"
 			oncommand="run_toolbar_button()"/>
+	</toolbarpalette>
+	-->
+
+	<toolbarpalette id="BrowserToolbarPalette">
+		<toolbaritem>
+			<!--
+			<label value="Here is an egg." context="clipmenu"/>
+			-->
+			<toolbarbutton id="palemon_barebones_tab_groups-toolbar-button"
+				label="Pale Moon Barebones Tab Groups"
+				class="toolbarbutton-1 chromeclass-toolbar-additional"
+				tooltiptext="&open_barebones_tab_groups.label;"
+				oncommand="run_toolbar_button()"/>
+			<menulist label="List of Binops">
+				<menupopup id="clipmenu">
+					<menuitem label="Add"/>
+					<menuitem label="Subtract"/>
+					<menuitem label="Multiply"/>
+					<menuitem label="Divide"/>
+				</menupopup>
+			</menulist>
+		</toolbaritem>
 	</toolbarpalette>
 </overlay>
 
