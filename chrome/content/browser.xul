@@ -43,17 +43,18 @@
 	<toolbarpalette id="BrowserToolbarPalette">
 		<toolbarbutton id="palemon_barebones_tab_groups-toolbar-button"
 			label="Pale Moon Barebones Tab Groups"
-			class="toolbarbutton-1 chromeclass-toolbar-additional"
+			class="toolbarbutton-1"
 			tooltiptext="&open_barebones_tab_groups.label;"
 			oncommand="main()"/>
 	</toolbarpalette>
 	-->
 
+	<!--
 	<toolbarpalette id="BrowserToolbarPalette">
 		<toolbaritem>
 			<toolbarbutton id="palemon_barebones_tab_groups-toolbar-button"
 				label="Pale Moon Barebones Tab Groups"
-				class="toolbarbutton-1 chromeclass-toolbar-additional"
+				class="toolbarbutton-1"
 				tooltiptext="&open_barebones_tab_groups.label;"
 				oncommand="main()"/>
 			<menulist label="List of Binops">
@@ -66,5 +67,25 @@
 			</menulist>
 		</toolbaritem>
 	</toolbarpalette>
+	-->
+
+	<toolbarpalette id="BrowserToolbarPalette">
+		<toolbaritem id="toolbaritem-binop">
+			<toolbarbutton id="palemon_barebones_tab_groups-toolbar-button"
+				label="Pale Moon Barebones Tab Groups"
+				class="toolbarbutton-1"
+				tooltiptext="&open_barebones_tab_groups.label;"
+				oncommand="main()"/>
+			<menulist label="List of Binops">
+				<menupopup id="menupopup-binop">
+					<menuitem label="Add"/>
+					<menuitem label="Subtract"/>
+					<menuitem label="Multiply"/>
+					<menuitem label="Divide"/>
+				</menupopup>
+			</menulist>
+		</toolbaritem>
+	</toolbarpalette>
+
 </overlay>
 

@@ -46,8 +46,8 @@ function append_menuitem(label)
 
 function main()
 {
-	//alert("run_toolbar_button():  Hello World!");
-	let menupopup = document.getElementById("binop_menu");
+	//alert("main():  Hello World!");
+	let menupopup = document.getElementById("menupopup-binop");
 
 	if (menupopup == null)
 	{
