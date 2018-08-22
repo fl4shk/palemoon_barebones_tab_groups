@@ -3,6 +3,11 @@
 // For console.log
 Cu.import("resource://gre/modules/Console.jsm");
 
+function eek()
+{
+	console.log("Pale Moon Barebones Tab Groups:  Eek!");
+}
+
 function recursive_freeze(some_object)
 {
 	for (let key in some_object)
@@ -32,50 +37,42 @@ function make_enum()
 	return recursive_freeze(ret);
 }
 
-
-//function main()
-//{
-//	console.log("main():  Hello World!");
-//	const Binop = make_enum("Add", "Subtract", "Multiply", "Divide");
-//
-//	//console.log(Binop.values.Add);
-//	//console.log(Binop.values.Subtract);
-//	//console.log(Binop.values.Multiply);
-//	//console.log(Binop.values.Divide);
-//	//console.log(Binop.length);
-//	console.log(Binop.values);
-//	console.log(Binop.names);
-//	console.log(Binop.length);
-//
-//	//alert(Binop);
-//	//alert(Binop.values);
-//	//alert(Binop.names);
-//	//alert(Binop.length);
-//}
-
-function run_menu_button()
+function append_menuitem(label)
 {
-	alert("run_menu_button():  Hello World!");
+	let to_append = document.createElement("menuitem");
+	to_append.setAttribute("label", label);
+	this.appendChild(to_append);
 }
 
-//function run_status_bar()
-//{
-//	alert("run_status_bar():  Hello World!");
-//}
-
-function run_toolbar_button()
+function main()
 {
 	//alert("run_toolbar_button():  Hello World!");
-	let menu = document.getElementById("binop_menu");
+	let menupopup = document.getElementById("binop_menu");
 
-	for (let key in menu)
+	if (menupopup == null)
 	{
-		console.log(key);
+		eek();
+		return;
 	}
+
+
+	//for (let iter of menupopup.children)
+	//{
+	//	//console.log(iter.getAttribute("label"));
+	//	if (iter.getAttribute("label") === "Divide")
+	//	{
+	//		//iter.setAttribute("label", "Eggs!");
+	//		iter.remove();
+
+	//	}
+	//}
+
+	//let to_append = document.createElement("menuitem");
+	//to_append.setAttribute("label", "Eggs!");
+
+	//menupopup.appendChild(to_append);
+	menupopup.cstm_append = append_menuitem;
+
+	menupopup.cstm_append("Eggs!");
+
 }
-
-//function run_keyboard_shortcut()
-//{
-//	alert("run_keyboard_shortcut():  Hello World!");
-//}
-

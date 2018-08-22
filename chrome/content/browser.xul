@@ -10,17 +10,15 @@
 	<menupopup id="menu_ToolsPopup">
 		<menuitem label="&open_barebones_tab_groups.label;"
 			key="palemon_barebones_tab_groups-run-key"
-			oncommand="run_menu_button()"/>
+			oncommand="main()"/>
 	</menupopup>
 
 	<!-- Keyboard shortcut... -->
-	<!--
 	<keyset>
 		<key id="palemon_barebones_tab_groups-run-key"
 			modifiers="alt shift" key="L"
-			oncommand="run_keyboard_shortcut()"/>
+			oncommand="main()"/>
 	</keyset>
-	-->
 
 	<!--
 	<statusbar id="status-bar">
@@ -28,7 +26,7 @@
 			class="statusbarpanel-iconic"
 			src="chrome://palemon_barebones_tab_groups/skin/status-bar.png"
 			tooltiptext="&open_barebones_tab_groups.label;"
-			onclick="run_status_bar()"/>
+			onclick="main()"/>
 	</statusbar>
 	-->
 
@@ -37,7 +35,7 @@
 		<statusbarpanel id="palemon_barebones_tab_groups-status-bar-icon"
 			class="statusbarpanel-iconic"
 			tooltiptext="&open_barebones_tab_groups.label;"
-			onclick="run_status_bar()"/>
+			onclick="main()"/>
 	</statusbar>
 	-->
 
@@ -47,22 +45,19 @@
 			label="Pale Moon Barebones Tab Groups"
 			class="toolbarbutton-1 chromeclass-toolbar-additional"
 			tooltiptext="&open_barebones_tab_groups.label;"
-			oncommand="run_toolbar_button()"/>
+			oncommand="main()"/>
 	</toolbarpalette>
 	-->
 
 	<toolbarpalette id="BrowserToolbarPalette">
 		<toolbaritem>
-			<!--
-			<label value="Here is an egg." context="clipmenu"/>
-			-->
 			<toolbarbutton id="palemon_barebones_tab_groups-toolbar-button"
 				label="Pale Moon Barebones Tab Groups"
 				class="toolbarbutton-1 chromeclass-toolbar-additional"
 				tooltiptext="&open_barebones_tab_groups.label;"
-				oncommand="run_toolbar_button()"/>
+				oncommand="main()"/>
 			<menulist label="List of Binops">
-				<menupopup id="clipmenu">
+				<menupopup id="binop_menu">
 					<menuitem label="Add"/>
 					<menuitem label="Subtract"/>
 					<menuitem label="Multiply"/>
